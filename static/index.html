@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trading Simulator</title>
+</head>
+<body>
+    <h1>Place Order</h1>
+    <form id="orderForm">
+        <input type="text" id="symbol" placeholder="Symbol (e.g., AAPL)" required>
+        <input type="number" id="price" placeholder="Price" step="0.01" required>
+        <input type="number" id="quantity" placeholder="Quantity" required>
+        <select id="side">
+            <option value="BUY">Buy</option>
+            <option value="SELL">Sell</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="response"></div>
+    <script src="script.js"></script>
+</body>
+</html>
